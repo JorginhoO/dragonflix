@@ -2,5 +2,5 @@
 Recriando a  interface do NETFLIX como base.
 
 ## DRAGONFLIX
-pagiana recriada com os filmes do dragon ball
+pagina recriada com os filmes do Dragon ball
 ## DIO Plataforma - BootCamp Carrefour Web Developer 
