@@ -1,0 +1,126 @@
+/* declarar variaveis */
+:root {
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/* resetar margem da página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* elementos base*/
+
+body{
+    background-color: var(--preta); /* Aplicando a Variavel */
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{   /* distanciamento entre h2(logo) e a familia container (nav) */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+header nav a{  
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header  nav a:hover{
+    color: #fff;
+}
+
+/* filme principal */
+.filme-principal{
+    font-size: 17px;
+    /* linear-gradient transparencia na imagem para o texto*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(../img/capa-fundo.png);
+   
+   /*deixando a imagem no tamanho da area de cobertura(box)*/
+    height: 500px;
+    background-size: cover;
+
+     display: flex; /* deixar o elemento em linha*/
+     flex-direction: column; /*deixar o flex em coluna*/ 
+     justify-content: center;
+     align-items: flex-start; /* alinhar os elmentos da esquerda para direita */
+
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+.titulo{  
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: black;
+    border: none;
+    color: rgb(255, 255, 255);
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:rgba(0,0,0,.50);
+    color: whitesmoke;
+}
+
+.botao i{
+    margin-right: 10px;
+    font-size: 15px;
+    }
+
+.filme-principal .container{
+    width: 70%;
+}
+
+
+.margin{
+    color: white;
+    margin-left: 8px;
+    margin-bottom: 8px;
+    
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;    
+}
+
+.box-filme:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.3);
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
+
